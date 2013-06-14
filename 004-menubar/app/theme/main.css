@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+
+html, body {
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    overflow:hidden;    
+}
+
+.appIconEditCopy   { background-image:url('http://cdn.hellworx.com/icon/nuvola/16x16/actions/editcopy.png'); }
+.appIconEditCut    { background-image:url('http://cdn.hellworx.com/icon/nuvola/16x16/actions/editcut.png'); }
+.appIconEditPaste  { background-image:url('http://cdn.hellworx.com/icon/nuvola/16x16/actions/editpaste.png'); }
+.appIconExit       { background-image:url('http://cdn.hellworx.com/icon/nuvola/16x16/actions/exit.png'); }
+.appIconFileNew    { background-image:url('http://cdn.hellworx.com/icon/nuvola/16x16/actions/filenew.png'); }
+.appIconFileOpen   { background-image:url('http://cdn.hellworx.com/icon/nuvola/16x16/actions/fileopen.png'); }
+.appIconFileSave   { background-image:url('http://cdn.hellworx.com/icon/nuvola/16x16/actions/filesave.png'); }
+.appIconFileSaveAs { background-image:url('http://cdn.hellworx.com/icon/nuvola/16x16/actions/filesaveas.png'); }
+.appIconFileClose  { background-image:url('http://cdn.hellworx.com/icon/nuvola/16x16/actions/fileclose.png'); }
+.appIconHelp       { background-image:url('http://cdn.hellworx.com/icon/nuvola/16x16/actions/help.png'); }
+.appIconRedo       { background-image:url('http://cdn.hellworx.com/icon/nuvola/16x16/actions/redo.png'); }
+.appIconUndo       { background-image:url('http://cdn.hellworx.com/icon/nuvola/16x16/actions/undo.png'); }

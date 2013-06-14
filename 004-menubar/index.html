@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en" />
+    <title>Dojo Tutorial</title>
+    <link rel="shortcut icon" href="http://cdn.hellworx.com/hellworx/favicon.png" />
+    <link rel="stylesheet" href="http://cdn.hellworx.com/hellworx/reset.css" />
+    <link rel="stylesheet" href="http://cdn.hellworx.com/dojo/1.9.0/dijit/themes/claro/claro.css" />
+    <link rel="stylesheet" href="app/theme/main.css" />
+    <script type="text/javascript">
+    // Configure application.
+    appConfig = {
+        // Get base url from current url.
+        baseUrl: location.href.substring(0,location.href.lastIndexOf("/")+1)
+    };
+
+    // Configure Dojo.
+    dojoConfig = {
+        parseOnLoad: true
+    };
+    </script>
+    <script type="text/javascript" src="http://cdn.hellworx.com/dojo/1.9.0/dojo/dojo.js"></script>
+    <script type="text/javascript">
+    // Load application.
+    require(
+        {
+            packages: [
+                { name: 'app', location: appConfig.baseUrl + '/app/' }
+            ]
+        },
+        [
+            "app"
+        ]
+    );
+    </script>
+</head>
+<body class="claro">
+
+<div data-dojo-type="dijit/MenuBar">
+    <div data-dojo-type="dijit/PopupMenuBarItem">
+        <span>File</span>
+        <div data-dojo-type="dijit/DropDownMenu">
+            <div data-dojo-type="dijit/MenuItem" data-dojo-props="iconClass:'dijitEditorIcon appIconFileNew'">New</div>
+            <div data-dojo-type="dijit/MenuItem" data-dojo-props="iconClass:'dijitEditorIcon appIconFileOpen'">Open</div>
+            <div data-dojo-type="dijit/MenuItem" data-dojo-props="iconClass:'dijitEditorIcon appIconFileSave'">Save</div>
+            <div data-dojo-type="dijit/MenuItem" data-dojo-props="iconClass:'dijitEditorIcon appIconFileSaveAs'">Save As...</div>
+            <div data-dojo-type="dijit/MenuItem" data-dojo-props="iconClass:'dijitEditorIcon appIconFileClose'">Close</div>
+            <div data-dojo-type="dijit/MenuItem" data-dojo-props="iconClass:'dijitEditorIcon appIconExit'">Exit</div>
+        </div>
+    </div>
+    <div data-dojo-type="dijit/PopupMenuBarItem">
+        <span>Edit</span>
+        <div data-dojo-type="dijit/DropDownMenu">
+            <div data-dojo-type="dijit/MenuItem" data-dojo-props="iconClass:'dijitEditorIcon appIconUndo'">Undo</div>
+            <div data-dojo-type="dijit/MenuItem" data-dojo-props="iconClass:'dijitEditorIcon appIconRedo'">Redo</div>
+            <div data-dojo-type="dijit/MenuSeparator"></div>
+            <div data-dojo-type="dijit/MenuItem" data-dojo-props="iconClass:'dijitEditorIcon appIconEditCut'">Cut</div>
+            <div data-dojo-type="dijit/MenuItem" data-dojo-props="iconClass:'dijitEditorIcon appIconEditCopy'">Copy</div>
+            <div data-dojo-type="dijit/MenuItem" data-dojo-props="iconClass:'dijitEditorIcon appIconEditPaste'">Paste</div>
+        </div>
+    </div>
+    <div data-dojo-type="dijit/PopupMenuBarItem">
+        <span>Help</span>
+        <div data-dojo-type="dijit/DropDownMenu">
+            <div id="mbtnHelp" data-dojo-type="dijit/MenuItem" data-dojo-props="iconClass:'dijitEditorIcon appIconHelp'">About</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

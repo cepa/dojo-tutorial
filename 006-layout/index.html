@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en" />
+    <title>Dojo Tutorial</title>
+    <link rel="shortcut icon" href="http://cdn.hellworx.com/hellworx/favicon.png" />
+    <link rel="stylesheet" href="http://cdn.hellworx.com/hellworx/reset.css" />
+    <link rel="stylesheet" href="http://cdn.hellworx.com/dojo/1.9.0/dijit/themes/claro/claro.css" />
+    <link rel="stylesheet" href="app/theme/main.css" />
+    <script type="text/javascript">
+    // Configure application.
+    appConfig = {
+   	    // Get base url from current url.
+   	    baseUrl: location.href.substring(0,location.href.lastIndexOf("/")+1)
+    };
+
+    // Configure Dojo.
+    dojoConfig = {
+        parseOnLoad: true
+    };
+    </script>
+    <script type="text/javascript" src="http://cdn.hellworx.com/dojo/1.9.0/dojo/dojo.js"></script>
+    <script type="text/javascript">
+    // Load application.
+    require(
+        {
+            packages: [
+                { name: 'app', location: appConfig.baseUrl + '/app/' }
+            ]
+        },
+        [
+            "app"
+        ]
+    );
+    </script>
+</head>
+<body class="claro">
+
+<div class="appBorderContainer" data-dojo-type="dijit/layout/BorderContainer">
+    <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'top', splitter:false">
+        This is the header content pane.
+    </div>
+    <div class="appLeadingAccordionContainer" data-dojo-type="dijit/layout/AccordionContainer" data-dojo-props="minSize:20, region:'leading', splitter:true">
+        <div data-dojo-type="dijit/layout/AccordionPane" title="First pane">
+            First pane content.
+        </div>
+        <div data-dojo-type="dijit/layout/AccordionPane" title="Second pane">
+            Second pane content.
+        </div>
+        <div data-dojo-type="dijit/layout/AccordionPane" title="Third pane">
+            Third pane content.
+        </div>
+    </div>
+    <div id="appCenterTabContainer" data-dojo-type="dijit/layout/TabContainer" data-dojo-props="splitter:true, region:'center'">
+        <div data-dojo-type="dijit/layout/ContentPane" title="Inline tab">
+            First tab inline content.
+        </div>
+        <div data-dojo-type="dijit/layout/ContentPane" title="Remote html tab" href="app/view/second.html">
+        </div>
+        <div data-dojo-type="dojox/layout/ContentPane" title="Dojox ContentPane tab" href="app/view/third.html" data-dojo-props="closable:true">
+        </div>
+    </div>
+    <div class="appTrailingAccordionContainer" data-dojo-type="dijit/layout/AccordionContainer" data-dojo-props="minSize:20, region:'trailing', splitter:true">
+        <div data-dojo-type="dijit/layout/AccordionPane" title="First pane">
+            First pane content.
+        </div>
+        <div data-dojo-type="dijit/layout/AccordionPane" title="Second pane">
+            Second pane content.
+        </div>
+    </div>
+    <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'bottom', splitter:false">
+        This is the footer content pane.
+    </div>
+</div>
+
+</body>
+</html>

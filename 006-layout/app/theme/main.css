@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+
+html, body {
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    overflow:hidden;    
+}
+
+.appBorderContainer {
+    width:100%;
+    height:100%;	
+}
+
+.appLeadingAccordionContainer {
+    width:300px;	
+}
+
+.appTrailingAccordionContainer {
+	width:200px;
+}
