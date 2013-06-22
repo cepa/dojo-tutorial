@@ -1,7 +1,8 @@
 define([
 	'require',
 	'dojo/ready',
-	'dojox/validate/web'
+	'dojox/validate/web',
+	'app/validate/custom'
 ], function(require, ready){
 	
 	var app = {};
