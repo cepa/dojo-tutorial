@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en" />
+    <title>Dojo Tutorial</title>
+    <link rel="shortcut icon" href="http://cdn.hellworx.com/hellworx/favicon.png" />
+    <link rel="stylesheet" href="http://cdn.hellworx.com/hellworx/reset.css" />
+    <link rel="stylesheet" href="http://cdn.hellworx.com/dojo/1.9.0/dijit/themes/claro/claro.css" />
+    <link rel="stylesheet" href="app/theme/main.css" />
+    <script type="text/javascript">
+    // Configure application.
+    appConfig = {
+        // Get base url from current url.
+        baseUrl: location.href.substring(0,location.href.lastIndexOf("/")+1)
+    };
+
+    // Configure Dojo.
+    dojoConfig = {
+        parseOnLoad: true
+    };
+    </script>
+    <script type="text/javascript" src="http://cdn.hellworx.com/dojo/1.9.0/dojo/dojo.js"></script>
+    <script type="text/javascript">
+    // Load application.
+    require(
+        {
+            packages: [
+                { name: 'app', location: appConfig.baseUrl + '/app/' }
+            ]
+        },
+        [
+            "app"
+        ]
+    );
+    </script>
+</head>
+<body class="claro">
+
+<div data-dojo-type="dijit/form/Form" enctype="multipart/form-data" action="" method="POST">
+    <div data-dojo-type="dojox/layout/TableContainer" data-dojo-props="cols:1">
+        <div data-dojo-type="app/form/AjaxValidationTextBox" data-dojo-props="ajaxUrl:'validate.php', invalidMessage:'Username is already taken'" title="Username:" name="username" value=""></div>
+    </div>
+    <button id="btnSubmit" data-dojo-type="dijit/form/Button" type="button" role="button">Submit</button>
+</div>
+
+</body>
+</html>
