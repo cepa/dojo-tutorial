@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en" />
+    <title>Dojo Tutorial</title>
+    <link rel="shortcut icon" href="../favicon.png" />
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="http://cdn.devgrid.net/ajax/dojo/1.9.0/dijit/themes/claro/claro.css" />
+    <link rel="stylesheet" href="http://cdn.devgrid.net/ajax/dojo/1.9.0/dojox/grid/enhanced/resources/claroEnhancedGrid.css" />
+    <link rel="stylesheet" href="app/theme/main.css" />
+    <script type="text/javascript">
+    // Configure application.
+    appConfig = {
+        // Get base url from current url.
+        baseUrl: location.href.substring(0,location.href.lastIndexOf("/")+1)
+    };
+
+    // Configure Dojo.
+    dojoConfig = {
+        parseOnLoad: true
+    };
+    </script>
+    <script type="text/javascript" src="http://cdn.devgrid.net/ajax/dojo/1.9.0/dojo/dojo.js"></script>
+    <script type="text/javascript">
+    // Load application.
+    require(
+        {
+            packages: [
+                { name: 'app', location: appConfig.baseUrl + '/app/' }
+            ]
+        },
+        [
+            "app"
+        ]
+    );
+    </script>
+</head>
+<body class="claro">
+
+<div id="gridPlaceholder" class="appGrid"></div>
+
+</body>
+</html>
