@@ -8,9 +8,9 @@ html, body {
     overflow:hidden;    
 }
 
-.appIconEditCopy   { background-image:url('http://cdn.hellworx.com/icon/nuvola/16x16/actions/editcopy.png'); }
-.appIconEditCut    { background-image:url('http://cdn.hellworx.com/icon/nuvola/16x16/actions/editcut.png'); }
-.appIconEditPaste  { background-image:url('http://cdn.hellworx.com/icon/nuvola/16x16/actions/editpaste.png'); }
+.appIconEditCopy   { background-image:url('http://cdn.devgrid.net/icon/nuvola/1.0/16x16/actions/editcopy.png'); }
+.appIconEditCut    { background-image:url('http://cdn.devgrid.net/icon/nuvola/1.0/16x16/actions/editcut.png'); }
+.appIconEditPaste  { background-image:url('http://cdn.devgrid.net/icon/nuvola/1.0/16x16/actions/editpaste.png'); }
 
 #contextMenu { 
 	position:absolute;

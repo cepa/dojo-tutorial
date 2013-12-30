@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="dojo-tutorial" default="build">
+	
+	<property file="build.properties" />
+	
+    <target name="download-composer">
+        <if>
+            <available file="composer.phar" type="file" />
+            <then>
+                <echo msg="File composer.phar already exists, skipping."/>
+            </then>
+            <else>
+                <exec
+                        command="curl -s http://getcomposer.org/installer | php"
+                        dir="."
+                        passthru="true"
+                        checkreturn="true"/>
+            </else>
+        </if>
+    </target>
+
+    <target name="update-composer" depends="download-composer">
+        <exec
+                command="php composer.phar update"
+                dir="."
+                passthru="true"
+                checkreturn="true"/>
+    </target>
+
+	<target name="clean">
+    </target>
+
+    <target name="prepare" depends="update-composer">
+    </target>
+
+    <target name="linter">
+        <apply executable="php" failonerror="true">
+            <arg value="-l" />
+            <fileset dir=".">
+                <include name="**/*.php" />
+                <exclude name="vendor/" />
+            </fileset>
+        </apply>
+    </target>
+
+    <target name="test" depends="linter">
+        <exec 
+                command="phpunit" 
+                dir="./"  
+                passthru="true"
+                checkreturn="true"/>
+    </target>
+
+    <target name="build" depends="clean, prepare">
+    </target>
+
+    <target name="dist" depends="build">
+    	<exec command="rm -f dist.tar*" />
+    	<tar destfile="dist.tar">
+    	    <fileset dir=".">
+    	    	<include name="**/**" />
+    	    	<exclude name="**/.git" />
+    		</fileset>
+    	</tar>
+    	<exec command="gzip dist.tar" passthru="true" checkreturn="true" />
+    </target>
+
+    <target name="deploy" depends="dist">
+    	<exec command="fab -u ${fabric.user} -H ${fabric.hosts} ${fabric.commands}" passthru="true" checkreturn="true" />
+    </target>
+
+</project>

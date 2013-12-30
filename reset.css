@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+
+html, body { border:0; margin:0; padding:0; width:100%; min-height:100%; }
+body { font-size:12px; font-family: Helvetica, Arial, "sans-serif" }
+h1, h2, h3, h4, h5, h6 { margin:0; padding:0; font-weight:normal; }
+ul, ol { margin:0px 0 0px 16px; padding:0; }
+blockquote { margin:22px 40px; padding:0; }
+img { border:0; }
+a, a:visited { text-decoration:none; }
+form { margin:0; padding:0; }
+input, select, textarea { border:1px solid #888888; padding:1px; margin:0px; }
+textarea { line-height:1.25; }
+label { cursor:pointer; }
+table { border:0; margin:0 0 0 0; padding:0; }
+table tr td { padding:2px; }
+p { margin:0; padding:0; }
+pre, code { line-height:1em; padding:0; margin:0; }
+
+.left { float:left; }
+.right { float:right; }
+.clear { clear:both; }
+
+.text-left { text-align:left; }
+.text-right { text-align:right; }
+.text-center { text-align:center; }
+
+.normal { font-weight:normal; }
+.bold { font-weight:bold; }
