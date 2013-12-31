@@ -15,14 +15,15 @@ define([
                 // Generate random id.
                 var unique = Math.abs(Math.floor(Math.random() * 0xffff));
                 
-                // Create handlebars template.
+                // Create handlebars template and render content.
                 var template = Handlebars.compile(view);
+                var content = template({ unique: unique });
 
                 // Create content pane for grid.
                 var contentPane = new ContentPane({
                     title:    title,
                     closable: true,
-                    content:  template({ unique: unique })
+                    content:  content
                 });
                 
                 // Render content pane.
