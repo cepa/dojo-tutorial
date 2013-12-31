@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en" />
+    <title>Dojo Tutorial</title>
+    <link rel="shortcut icon" href="../favicon.png" />
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="http://cdn.devgrid.net/ajax/dojo/1.9.0/dijit/themes/claro/claro.css" />
+    <link rel="stylesheet" href="app/theme/main.css" />
+    <script type="text/javascript">
+    // Configure application.
+    appConfig = {
+        // Get base url from current url.
+        baseUrl: location.href.substring(0,location.href.lastIndexOf("/"))
+    };
+
+    // Configure Dojo.
+    dojoConfig = {
+        parseOnLoad: true,
+        packages: [
+            { 
+                name: 'app', 
+                location: appConfig.baseUrl + '/app' 
+            },
+            {
+                name: 'Handlebars',
+                location: 'http://cdn.devgrid.net/ajax/handlebars/1.0.0',
+                main: 'handlebars'
+            },
+            {
+                name: 'jQuery',
+                location: 'http://cdn.devgrid.net/ajax/jquery/1.8.0',
+                main: 'jquery'
+            }
+        ]
+    };
+    </script>
+    <script type="text/javascript" src="http://cdn.devgrid.net/ajax/dojo/1.9.0/dojo/dojo.js"></script>
+    <script type="text/javascript">
+    require(['app/main']);
+    </script>
+</head>
+<body class="claro">
+
+<div data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="gutters:true, liveSplitters:true" style="width: 100%; height: 100%;">
+
+    <div id="contentPane" class="appContentPane" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="splitter:true, region:'center'">
+    </div>
+
+</div>
+
+</body>
+</html>

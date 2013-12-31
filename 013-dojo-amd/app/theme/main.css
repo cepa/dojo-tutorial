@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+
+html, body {
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    overflow:hidden;    
+}
+
+.appContentPane {
+    border:0 !important;
+    padding:0 !important;
+}
+
+.hiddenImage {
+    display: none;    
+}
