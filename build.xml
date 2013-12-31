@@ -60,6 +60,7 @@
     	    <fileset dir=".">
     	    	<include name="**/**" />
     	    	<exclude name="**/.git" />
+    	    	<exclude name="build.properties" />
     		</fileset>
     	</tar>
     	<exec command="gzip dist.tar" passthru="true" checkreturn="true" />

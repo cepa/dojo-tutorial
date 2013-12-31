@@ -23,6 +23,7 @@ def deploy():
     if (exists(current_path)):
         run('cd ' + project_path + ' && unlink current')
     run('cd ' + project_path + ' && ln -s %(release)s current' % env)
+    run('cd ' + release_path + ' && rm -f %(distfile)s' % env)
  
 @parallel
 def purge():
