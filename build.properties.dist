@@ -1,3 +1,0 @@
-fabric.user = root
-fabric.hosts = localhost
-fabric.commands = deploy

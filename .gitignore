@@ -1,6 +1,7 @@
 /.settings
 /.buildpath
 /.project
+/.pydevproject
 /vendor
 /dist.tar
 /dist.tar.gz
@@ -8,3 +9,4 @@
 /composer.lock
 /fabfile.pyc
 /build.properties
+*.pyc
