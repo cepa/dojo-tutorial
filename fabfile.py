@@ -1,9 +1,6 @@
 import time
 import fabric.api as fapi
 import fabric.contrib.files as ffiles
-#from fabric.api import *
-#from fabric.operations import *
-#from fabric.contrib.files import *
 
 fapi.env.project_name = 'dojo-tutorial'
 fapi.env.distfile = 'dist.tar.gz'
