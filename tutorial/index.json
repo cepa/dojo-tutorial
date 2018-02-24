@@ -1,0 +1,151 @@
+{
+
+    "lessons": [
+        {
+            "title": "001. Hello World",
+            "description": "Create the simplest application with Dojo Toolkit, show the dijit Dialog widget, use AMD to load the app module.",
+            "page": "001/hello-world",
+            "thumb": "/assets/thumbs/001.png",
+            "demoUrl": "http://demo.dojotutorial.org/001-hello-world/",
+            "githubUrl": "https://github.com/cepa/dojo-tutorial/tree/master/001-hello-world"
+        },
+        
+        {
+            "title": "002. Button Click",
+            "description": "Display dijit Button widget and handle onClick event.",
+            "page": "002/button-click",
+            "thumb": "/assets/thumbs/002.png",
+            "demoUrl": "http://demo.dojotutorial.org/002-button-click/",
+            "githubUrl": "https://github.com/cepa/dojo-tutorial/tree/master/002-button-click"
+        },
+        
+        {
+            "title": "003. Dialog",
+            "description": "Display dijit Dialog widget with remote content.",
+            "page": "003/dialog",
+            "thumb": "/assets/thumbs/003.png",
+            "demoUrl": "http://demo.dojotutorial.org/003-dialog/",
+            "githubUrl": "https://github.com/cepa/dojo-tutorial/tree/master/003-dialog"
+        },
+        
+        {
+            "title": "004. Menubar",
+            "description": "Display menubar with icons and handle onClick event.",
+            "page": "004/menubar",
+            "thumb": "/assets/thumbs/004.png",
+            "demoUrl": "http://demo.dojotutorial.org/004-menubar/",
+            "githubUrl": "https://github.com/cepa/dojo-tutorial/tree/master/004-menubar"
+        },
+        
+        {
+            "title": "005. Context Menu",
+            "description": "Display custom context menu on right mouse button click.",
+            "page": "005/contextmenu",
+            "thumb": "/assets/thumbs/005.png",
+            "demoUrl": "http://demo.dojotutorial.org/005-contextmenu/",
+            "githubUrl": "https://github.com/cepa/dojo-tutorial/tree/master/005-contextmenu"
+        },
+        
+        {
+            "title": "006. Layout",
+            "description": "Rich Internet Application layout with dijit BorderContainer.",
+            "page": "006/layout",
+            "thumb": "/assets/thumbs/006.png",
+            "demoUrl": "http://demo.dojotutorial.org/006-layout/",
+            "githubUrl": "https://github.com/cepa/dojo-tutorial/tree/master/006-layout"
+        },
+        
+        {
+            "title": "007. Custom Alert Dialog",
+            "description": "Create custom Dojo widget, an AlertDialog.",
+            "page": "007/custom-alert-dialog",
+            "thumb": "/assets/thumbs/007.png",
+            "demoUrl": "http://demo.dojotutorial.org/007-custom-alert-dialog/",
+            "githubUrl": "https://github.com/cepa/dojo-tutorial/tree/master/007-custom-alert-dialog"
+        },
+        
+        {
+            "title": "008. Custom Confirm Dialog",
+            "description": "Create custom ConfirmDialog widget with programmable buttons.",
+            "page": "008/custom-confirm-dialog",
+            "thumb": "/assets/thumbs/008.png",
+            "demoUrl": "http://demo.dojotutorial.org/008-custom-confirm-dialog/",
+            "githubUrl": "https://github.com/cepa/dojo-tutorial/tree/master/008-custom-confirm-dialog"
+        },
+        
+        {
+            "title": "009. Form",
+            "description": "Build responsive forms with dijit Form and dojox TableContainer.",
+            "page": "009/form",
+            "thumb": "/assets/thumbs/009.png",
+            "demoUrl": "http://demo.dojotutorial.org/009-form/",
+            "githubUrl": "https://github.com/cepa/dojo-tutorial/tree/master/009-form"
+        },
+        
+        {
+            "title": "010. Form validation",
+            "description": "Validate forms with dojox validate, create custom validator.",
+            "page": "010/form-validation",
+            "thumb": "/assets/thumbs/010.png",
+            "demoUrl": "http://demo.dojotutorial.org/010-form-validation/",
+            "githubUrl": "https://github.com/cepa/dojo-tutorial/tree/master/010-form-validation"
+        },
+        
+        {
+            "title": "011. Ajax form validator",
+            "description": "Create custom dojo form text box widget with server based ajax validation.",
+            "page": "011/ajax-form-validator",
+            "thumb": "/assets/thumbs/011.png",
+            "demoUrl": "http://demo.dojotutorial.org/011-form-ajax-validator/",
+            "githubUrl": "https://github.com/cepa/dojo-tutorial/tree/master/011-form-ajax-validator"
+        },
+        
+        
+        {
+            "title": "012. Login form dialog",
+            "description": "Display login form on a custom dialog and send Ajax requests with form data.",
+            "page": "012/login-form-dialog",
+            "thumb": "/assets/thumbs/012.png",
+            "demoUrl": "http://demo.dojotutorial.org/012-login-form-dialog/",
+            "githubUrl": "https://github.com/cepa/dojo-tutorial/tree/master/012-login-form-dialog"
+        },
+        
+        {
+            "title": "013. Dojo AMD",
+            "description": "How to use Dojo loader, integrate Dojo with external libs like jQuery and Handlebars.",
+            "page": "013/dojo-amd",
+            "thumb": "/assets/thumbs/013.png",
+            "demoUrl": "http://demo.dojotutorial.org/013-dojo-amd/",
+            "githubUrl": "https://github.com/cepa/dojo-tutorial/tree/master/013-dojo-amd"
+        },
+        
+        {
+            "title": "014. MVC form",
+            "description": "Simple MVC application, create a controller to handle a form in a view.",
+            "page": "014/mvc-form",
+            "thumb": "/assets/thumbs/014.png",
+            "demoUrl": "http://demo.dojotutorial.org/014-mvc-form/",
+            "githubUrl": "https://github.com/cepa/dojo-tutorial/tree/master/014-mvc-form"
+        },
+        
+        {
+            "title": "015. Grid",
+            "description": "Build simplest Dojo grid.",
+            "page": "015/grid",
+            "thumb": "/assets/thumbs/015.png",
+            "demoUrl": "http://demo.dojotutorial.org/015-grid/",
+            "githubUrl": "https://github.com/cepa/dojo-tutorial/tree/master/015-grid"
+        },
+        
+        {
+            "title": "016. Dynamic grid",
+            "description": "Create grid instance on fly and display it in a tab.",
+            "page": "016/dynamic-grid",
+            "thumb": "/assets/thumbs/016.png",
+            "demoUrl": "http://demo.dojotutorial.org/016-dynamic-grid/",
+            "githubUrl": "https://github.com/cepa/dojo-tutorial/tree/master/016-dynamic-grid"
+        }
+        
+    ]
+
+}
