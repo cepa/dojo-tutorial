@@ -1,6 +1,6 @@
 # Dojo Toolkit 1.9 Tutorial
 
-_This repository is no longer maintained_
+_This repository is no longer maintained!_
 
 This is a tutorial with simple examples how to solve real life scenarios with Dojo and how to create Rich Internet Applications / Singe Page Applications mostly backend oriented.
 The tutorial was started because of lack of good examples that can introduce Dojo step by step, which by far is most likely one of the most powerful and comprehensive javascript toolkits in the world offering a lot more ready to use widgets than any other popular javascript framework.
@@ -9,7 +9,7 @@ The tutorial was started because of lack of good examples that can introduce Doj
 Visit http://dojotutorial.org/ where you can find working examples from each tutorial.
 
 ## Tutorials
-Each lesson is in the _tutorial_ directory.s
+Each lesson is in the _tutorial_ directory.
 
 *   001 - **Hello world** - Create a boilerplate app with dojo.
 *   002 - **Button click** - Handle button click action.
